@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.js": "/static/js/main.f1b674ae.chunk.js",
+    "main.js.map": "/static/js/main.f1b674ae.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.733f9ba5.js",
+    "runtime-main.js.map": "/static/js/runtime-main.733f9ba5.js.map",
+    "static/js/2.befa4719.chunk.js": "/static/js/2.befa4719.chunk.js",
+    "static/js/2.befa4719.chunk.js.map": "/static/js/2.befa4719.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.d24372f89ca712da3b8ab9e617a86837.js": "/precache-manifest.d24372f89ca712da3b8ab9e617a86837.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.befa4719.chunk.js.LICENSE.txt": "/static/js/2.befa4719.chunk.js.LICENSE.txt",
+    "static/media/bg-boost-desktop.svg": "/static/media/bg-boost-desktop.dc8b886b.svg",
+    "static/media/bg-shorten-desktop.svg": "/static/media/bg-shorten-desktop.a82de60e.svg",
+    "static/media/icon-brand-recognition.svg": "/static/media/icon-brand-recognition.1922b68a.svg",
+    "static/media/icon-detailed-records.svg": "/static/media/icon-detailed-records.e3d9caa9.svg",
+    "static/media/icon-fully-customizable.svg": "/static/media/icon-fully-customizable.cc099cea.svg",
+    "static/media/illustration-working.svg": "/static/media/illustration-working.5029d049.svg",
+    "static/media/logo.svg": "/static/media/logo.6387840f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.733f9ba5.js",
+    "static/js/2.befa4719.chunk.js",
+    "static/js/main.f1b674ae.chunk.js"
+  ]
+}
