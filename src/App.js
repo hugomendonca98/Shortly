@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import { GlobalStyleds } from './Global/Styles/styles';
+/*import Menu from './components/Menu';*/
+import MenuResponsive from './components/MenuResponsive'
+import Header from './components/Header';
+import Shorten from './components/Shorten';
+import Statistics from './components/Statistics';
+import Boost from './components/Boost';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        <GlobalStyleds/>
+        <MenuResponsive/>
+        <Header/>
+        <Shorten/>
+        <Statistics/>
+        <Boost/>
+        <Footer/>
+      </>
     </div>
   );
 }
 
 export default App;
+
+
