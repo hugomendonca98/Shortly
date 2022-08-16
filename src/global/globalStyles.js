@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 
-export const GlobalStyleds = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
 
     /* Font Poppins 500 and 700 */
     * {

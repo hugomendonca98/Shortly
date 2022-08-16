@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
-import formBackground from "../../images/bg-shorten-desktop.svg";
+import formBackground from "../../assets/images/bg-shorten-desktop.svg";
 import {
   PrimaryDarkViolet,
   PrimaryCyan,
   SoftGray,
   SecundaryRed
-} from "../../Global/Styles/Colors";
+} from "../../global/colors";
 
 export const ShortenStyled = styled.div`
   background-color: ${SoftGray};

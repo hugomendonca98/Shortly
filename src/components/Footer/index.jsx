@@ -2,7 +2,7 @@
 import React from "react";
 
 import { FooterStyled } from "./styles";
-import logo from "../../images/logo.svg";
+import logo from "../../assets/images/logo.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,

@@ -5,7 +5,7 @@ import {
   PrimaryDarkViolet,
   SoftGray,
   PrimaryCyan
-} from "../../Global/Styles/Colors";
+} from "../../global/colors";
 
 export const StatisticsStyled = styled.div`
   padding-top: 30px;

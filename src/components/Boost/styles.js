@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import BgBoostDesktop from '../../images/bg-boost-desktop.svg';
-import { PrimaryDarkViolet, PrimaryCyan } from '../../Global/Styles/Colors';
+import BgBoostDesktop from '../../assets/images/bg-boost-desktop.svg';
+import { PrimaryDarkViolet, PrimaryCyan } from '../../global/colors';
 
 export const BoostStyled = styled.div`
     background-image: url(${BgBoostDesktop});

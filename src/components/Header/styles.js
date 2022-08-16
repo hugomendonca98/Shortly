@@ -4,7 +4,7 @@ import {
   NeutralVeryDarkViolet,
   NeutralGrayishViolet,
   PrimaryCyan
-} from "../../Global/Styles/Colors";
+} from "../../global/colors";
 
 export const HeaderStyled = styled.header`
   height: 450px;
@@ -37,21 +37,22 @@ export const HeaderStyled = styled.header`
         font-size: 16px;
         color: ${NeutralGrayishViolet};
         margin: 5px 0px;
+        margin-bottom: 30px;
         width: 500px;
         font-weight: 700;
       }
 
-      button {
+      a {
         font-size: 18px;
         background-color: ${PrimaryCyan};
         color: white;
         padding: 10px 25px;
         border-radius: 20px;
-        margin: 20px 0px;
         font-family: "Poppins", sans-serif;
+        text-decoration: none;
       }
 
-      button:hover {
+      a:hover {
         transition: 300ms;
         opacity: 0.7;
       }
@@ -99,6 +100,7 @@ export const HeaderStyled = styled.header`
         p {
           width: 400px;
           margin: auto;
+          margin-bottom: 30px;
         }
 
         button {

@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { NeutralGrayishViolet, PrimaryCyan, NeutralVeryDarkBlue } from '../../Global/Styles/Colors';
+import { NeutralGrayishViolet, PrimaryCyan, NeutralVeryDarkBlue } from '../../global/colors';
 
 export const MenuStyled = styled.div`
 

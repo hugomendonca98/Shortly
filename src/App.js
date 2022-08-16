@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { GlobalStyleds } from './Global/Styles/styles';
+import { GlobalStyles } from './global/globalStyles';
 /*import Menu from './components/Menu';*/
 import MenuResponsive from './components/MenuResponsive'
 import Header from './components/Header';
@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <>
-        <GlobalStyleds/>
+        <GlobalStyles />
         <MenuResponsive/>
         <Header/>
         <Shorten/>

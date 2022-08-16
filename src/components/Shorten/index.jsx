@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
-import api from "../../Global/services/api";
+import api from "../../services/api";
 import { ShortenStyled } from "./styles";
-import { SecundaryRed, PrimaryDarkViolet } from "../../Global/Styles/Colors";
+import { SecundaryRed, PrimaryDarkViolet } from "../../global/colors";
 
 const Shorten = () => {
   const [shortLink, setShortLink] = useState("");
@@ -31,18 +31,17 @@ const Shorten = () => {
     } else {
       setFormError("none");
       setTextError("none");
-      const response = await api.post(`https://rel.ink/api/links/`, {
-        url: shortLink
-      });
+      const response = await api.post(`/shorten?url=${shortLink}`);
 
       setShortedUrl([
         ...shortedUrl,
         {
-          shortedLink: `https://rel.ink/${response.data.hashid}`,
-          link: `${response.data.url}`,
+          shortedLink: response.data.result.full_short_link,
+          link: response.data.result.original_link,
           id: idNumber
         }
       ]);
+
       setIdNumber(idNumber + 1);
     }
   }
@@ -55,7 +54,7 @@ const Shorten = () => {
 
   return (
     <ShortenStyled>
-      <div className="shorten-contain">
+      <div className="shorten-contain" id="shorten">
         <div className="shorten">
           <input
             type="text"

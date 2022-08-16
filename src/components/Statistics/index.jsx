@@ -1,8 +1,8 @@
 import React from "react";
 
-import iconBrandRecognition from "../../images/icon-brand-recognition.svg";
-import iconDetailedRecords from "../../images/icon-detailed-records.svg";
-import iconFullyCustomizable from "../../images/icon-fully-customizable.svg";
+import iconBrandRecognition from "../../assets/images/icon-brand-recognition.svg";
+import iconDetailedRecords from "../../assets/images/icon-detailed-records.svg";
+import iconFullyCustomizable from "../../assets/images/icon-fully-customizable.svg";
 import { StatisticsStyled } from "./styles";
 
 const Statistics = () => {

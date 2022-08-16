@@ -5,7 +5,7 @@ import {
   PrimaryCyan,
   NeutralVeryDarkBlue,
   PrimaryDarkViolet
-} from "../../Global/Styles/Colors";
+} from "../../global/colors";
 
 export const MenuStyled = styled.div`
   

@@ -1,9 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-import ResponsiveMenu from 'react-responsive-navbar';
 import { MenuStyled } from './styles';
-import logo from '../../images/logo.svg';
+import logo from '../../assets/images/logo.svg';
 
 const Menu = () => {
     return (

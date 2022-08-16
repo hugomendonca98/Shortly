@@ -4,7 +4,7 @@ import {
   NeutralVeryDarkViolet,
   NeutralGrayishViolet,
   PrimaryCyan
-} from "../../Global/Styles/Colors";
+} from "../../global/colors";
 
 export const FooterStyled = styled.div`
   background-color: ${NeutralVeryDarkViolet};
