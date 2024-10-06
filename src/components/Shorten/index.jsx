@@ -12,10 +12,12 @@ const Shorten = () => {
   const [formError, setFormError] = useState("");
   const [textError, setTextError] = useState("none");
   const [idNumber, setIdNumber] = useState(0);
+  const [inputValue, setInputValue] = useState("");
 
   function linkChange(e) {
     const response = e.target.value;
     setShortLink(response);
+    setInputValue(response);
   }
 
   async function loadApi(e) {
@@ -31,18 +33,23 @@ const Shorten = () => {
     } else {
       setFormError("none");
       setTextError("none");
-      const response = await api.post(`/shorten?url=${shortLink}`);
+      const response = await api.post('/link', {
+        url: shortLink
+      });
 
       setShortedUrl([
         ...shortedUrl,
         {
-          shortedLink: response.data.result.full_short_link,
-          link: response.data.result.original_link,
-          id: idNumber
+          shortedLink: response.data.shrtlnk,
+          link: response.data.url,
+          id: response.data.key
         }
       ]);
 
       setIdNumber(idNumber + 1);
+
+      setInputValue("");
+      
     }
   }
 
@@ -60,9 +67,10 @@ const Shorten = () => {
             type="text"
             name="shorten"
             onChange={linkChange}
+            value={inputValue}
             style={{ border: `${formError}` }}
             placeholder="Encurtar o link aqui.."
-          ></input>
+          />
           <button type="submit" onClick={loadApi}>
             Encurtar
           </button>
